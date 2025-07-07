@@ -1,4 +1,5 @@
 import { Container, Flex, Image, Input, Text } from "@chakra-ui/react"
+import { useTranslation } from "react-i18next"
 import {
   Link as RouterLink,
   createFileRoute,
@@ -33,6 +34,7 @@ interface UserRegisterForm extends UserRegister {
 
 function SignUp() {
   const { signUpMutation } = useAuth()
+  const { t } = useTranslation()
   const {
     register,
     handleSubmit,
@@ -85,7 +87,7 @@ function SignUp() {
                 {...register("full_name", {
                   required: "Full Name is required",
                 })}
-                placeholder="Full Name"
+                placeholder={t("signup.fullNamePlaceholder")}
                 type="text"
               />
             </InputGroup>
@@ -99,7 +101,7 @@ function SignUp() {
                   required: "Email is required",
                   pattern: emailPattern,
                 })}
-                placeholder="Email"
+                placeholder={t("signup.emailPlaceholder")}
                 type="email"
               />
             </InputGroup>
@@ -108,23 +110,23 @@ function SignUp() {
             type="password"
             startElement={<FiLock />}
             {...register("password", passwordRules())}
-            placeholder="Password"
+            placeholder={t("signup.passwordPlaceholder")}
             errors={errors}
           />
           <PasswordInput
             type="confirm_password"
             startElement={<FiLock />}
             {...register("confirm_password", confirmPasswordRules(getValues))}
-            placeholder="Confirm Password"
+            placeholder={t("signup.confirmPasswordPlaceholder")}
             errors={errors}
           />
           <Button variant="solid" type="submit" loading={isSubmitting}>
-            Sign Up
+            {t("signup.signupButton")}
           </Button>
           <Text>
-            Already have an account?{" "}
+            {t("signup.loginPrompt")} {" "}
             <RouterLink to="/login" className="main-link">
-              Log In
+              {t("signup.loginLink")}
             </RouterLink>
           </Text>
         </Container>
