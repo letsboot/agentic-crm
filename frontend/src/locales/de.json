@@ -1,0 +1,33 @@
+{
+  "language": {
+    "english": "Englisch",
+    "german": "Deutsch",
+    "japanese": "Japanisch"
+  },
+  "login": {
+    "emailPlaceholder": "E-Mail",
+    "passwordPlaceholder": "Passwort",
+    "forgotPassword": "Passwort vergessen?",
+    "loginButton": "Einloggen",
+    "signupPrompt": "Noch kein Konto?",
+    "signupLink": "Registrieren"
+  },
+  "signup": {
+    "fullNamePlaceholder": "Vollständiger Name",
+    "emailPlaceholder": "E-Mail",
+    "passwordPlaceholder": "Passwort",
+    "confirmPasswordPlaceholder": "Passwort bestätigen",
+    "signupButton": "Registrieren",
+    "loginPrompt": "Schon ein Konto?",
+    "loginLink": "Einloggen"
+  },
+  "notfound": {
+    "oops": "Hoppla!",
+    "message": "Die gesuchte Seite wurde nicht gefunden.",
+    "goBack": "Zurück"
+  },
+  "navbar": {
+    "myProfile": "Mein Profil",
+    "logOut": "Ausloggen"
+  }
+}

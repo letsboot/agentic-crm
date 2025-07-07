@@ -1,4 +1,5 @@
 import { Container, Image, Input, Text } from "@chakra-ui/react"
+import { useTranslation } from "react-i18next"
 import {
   Link as RouterLink,
   createFileRoute,
@@ -29,6 +30,7 @@ export const Route = createFileRoute("/login")({
 
 function Login() {
   const { loginMutation, error, resetError } = useAuth()
+  const { t } = useTranslation()
   const {
     register,
     handleSubmit,
@@ -85,7 +87,7 @@ function Login() {
                 required: "Username is required",
                 pattern: emailPattern,
               })}
-              placeholder="Email"
+              placeholder={t("login.emailPlaceholder")}
               type="email"
             />
           </InputGroup>
@@ -94,19 +96,19 @@ function Login() {
           type="password"
           startElement={<FiLock />}
           {...register("password", passwordRules())}
-          placeholder="Password"
+          placeholder={t("login.passwordPlaceholder")}
           errors={errors}
         />
         <RouterLink to="/recover-password" className="main-link">
-          Forgot Password?!
+          {t("login.forgotPassword")}
         </RouterLink>
         <Button variant="solid" type="submit" loading={isSubmitting} size="md">
-          Log In
+          {t("login.loginButton")}
         </Button>
         <Text>
-          Don't have an account?{" "}
+          {t("login.signupPrompt")} {" "}
           <RouterLink to="/signup" className="main-link">
-            Sign Up
+            {t("login.signupLink")}
           </RouterLink>
         </Text>
       </Container>

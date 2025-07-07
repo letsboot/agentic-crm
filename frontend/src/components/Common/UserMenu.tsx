@@ -5,9 +5,11 @@ import { FiLogOut, FiUser } from "react-icons/fi"
 
 import useAuth from "@/hooks/useAuth"
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger } from "../ui/menu"
+import { useTranslation } from "react-i18next"
 
 const UserMenu = () => {
   const { user, logout } = useAuth()
+  const { t } = useTranslation()
 
   const handleLogout = async () => {
     logout()
@@ -40,7 +42,7 @@ const UserMenu = () => {
                 style={{ cursor: "pointer" }}
               >
                 <FiUser fontSize="18px" />
-                <Box flex="1">My Profile</Box>
+                <Box flex="1">{t("navbar.myProfile")}</Box>
               </MenuItem>
             </Link>
 
@@ -52,7 +54,7 @@ const UserMenu = () => {
               style={{ cursor: "pointer" }}
             >
               <FiLogOut />
-              Log Out
+              {t("navbar.logOut")}
             </MenuItem>
           </MenuContent>
         </MenuRoot>

@@ -1,0 +1,33 @@
+{
+  "language": {
+    "english": "英語",
+    "german": "ドイツ語",
+    "japanese": "日本語"
+  },
+  "login": {
+    "emailPlaceholder": "メールアドレス",
+    "passwordPlaceholder": "パスワード",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "loginButton": "ログイン",
+    "signupPrompt": "アカウントをお持ちでない方",
+    "signupLink": "サインアップ"
+  },
+  "signup": {
+    "fullNamePlaceholder": "氏名",
+    "emailPlaceholder": "メールアドレス",
+    "passwordPlaceholder": "パスワード",
+    "confirmPasswordPlaceholder": "パスワード確認",
+    "signupButton": "サインアップ",
+    "loginPrompt": "すでにアカウントをお持ちですか？",
+    "loginLink": "ログイン"
+  },
+  "notfound": {
+    "oops": "おっと！",
+    "message": "お探しのページは見つかりませんでした。",
+    "goBack": "戻る"
+  },
+  "navbar": {
+    "myProfile": "プロフィール",
+    "logOut": "ログアウト"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": {
+    "english": "English",
+    "german": "Deutsch",
+    "japanese": "日本語"
+  },
+  "login": {
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "forgotPassword": "Forgot Password?!",
+    "loginButton": "Log In",
+    "signupPrompt": "Don't have an account?",
+    "signupLink": "Sign Up"
+  },
+  "signup": {
+    "fullNamePlaceholder": "Full Name",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "confirmPasswordPlaceholder": "Confirm Password",
+    "signupButton": "Sign Up",
+    "loginPrompt": "Already have an account?",
+    "loginLink": "Log In"
+  },
+  "notfound": {
+    "oops": "Oops!",
+    "message": "The page you are looking for was not found.",
+    "goBack": "Go Back"
+  },
+  "navbar": {
+    "myProfile": "My Profile",
+    "logOut": "Log Out"
+  }
+}
