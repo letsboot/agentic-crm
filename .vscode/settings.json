@@ -1,0 +1,17 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#34495E",
+    "titleBar.inactiveBackground": "#698aac",
+    "titleBar.activeForeground": "#ECF0F1",
+    "titleBar.inactiveForeground": "#ECF0F1",
+    "activityBar.background": "#2C3E50",
+    "statusBar.background": "#2C3E50",
+    "activityBar.foreground": "#ECF0F1",
+    "statusBar.foreground": "#ECF0F1",
+    "activityBar.inactiveForeground": "#F8F9FA"
+  },
+  "yaml.customTags": [
+    "!reference sequence"
+  ],
+  "editor.formatOnSave": false
+}
